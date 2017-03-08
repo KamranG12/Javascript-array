@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>tasktwo</title>
+    </head>
+
+    <body>
+        <script>
+            var arr1=[3,4,5,-3,0,12,100,7,10,11,99,1000];
+            var b=arr1[0];
+            var a=arr1[0];
+            var f=0;
+            var e=0;
+            for(var i=1;i<arr1.length;i++){
+                if(arr1[i]<b){
+                    b=arr1[i]
+                }
+                if(arr1[i]>a){
+                    a=arr1[i]
+                }
+            }
+            var c=a;
+            var d=a;
+            for(var i=0;i<arr1.length;i++){
+                if(arr1[i]-b<c && arr1[i]-b!=0){
+                    c=arr1[i]-b;
+                    f=arr1[i];
+                }
+                if(a-arr1[i]<d && arr1[i]-a!=0){
+                    d=a-arr1[i];
+                    e=arr1[i];
+                }
+            }
+            document.write(f,' , '+e)
+        </script>
+    </body>
+</html>
