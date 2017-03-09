@@ -5,22 +5,26 @@
 
     <body>
         <script>
-            var array=[3, 2, 3,'a','a','b','b','b', 2, 4, 9,3,3];
+            var array=[3, 2, 3,'a','a','a','a','a','a','b','b','b', 2, 4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4, 9,3,3];
+            function test(){
             var b=0;
             var c=0;
+            var d=0;
             for (var i=0;i<array.length;i++){
-                for (var j=0;j<array.length;j++){
+                for (var j=i;j<array.length;j++){
                     if(array[i]===array[j]){
                         b=b+1;
                     }
                 }
                 if(b>c){
                     c=b;
-                    document.write(array[i]+' simvolu -',c+' defe tekrarlanib  ');
+                    d=array[i];
                 }
                 b=0;
             }
-            
+            document.write(d+' simvolu -',c+' defe tekrarlanib  ');
+            }
+            test();
         </script>
     </body>
 </html>
